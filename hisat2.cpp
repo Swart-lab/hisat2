@@ -495,7 +495,7 @@ static void resetOptions() {
     penConflictSplice = 1000000;
     penCanIntronLen.init(SIMPLE_FUNC_LOG, -8, 1);
     penNoncanIntronLen.init(SIMPLE_FUNC_LOG, -8, 1);
-    minIntronLen = 20;
+    minIntronLen = 9;
     maxIntronLen = 500000;
     knownSpliceSiteInfile = "";
     novelSpliceSiteInfile = "";
