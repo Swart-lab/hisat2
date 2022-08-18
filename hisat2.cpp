@@ -1676,11 +1676,11 @@ static void parseOption(int next_option, const char *arg) {
             break;
         }
         case ARG_MIN_INTRONLEN: {
-            minIntronLen = parseInt(20, "--min-intronlen arg must be at least 20", arg);
+            minIntronLen = parseInt(9, "--min-intronlen arg must be at least 9", arg);
             break;
         }
         case ARG_MAX_INTRONLEN: {
-            maxIntronLen = parseInt(20, "--max-intronlen arg must be at least 20", arg);
+            maxIntronLen = parseInt(20, "--max-intronlen arg must be less than 20", arg);
             break;
         }
         case ARG_KNOWN_SPLICESITE_INFILE: knownSpliceSiteInfile = arg; break;
